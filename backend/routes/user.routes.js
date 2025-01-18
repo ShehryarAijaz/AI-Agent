@@ -9,4 +9,4 @@ router.post('/register',
     body('password').isLength({ min: 3 }).withMessage('Password must be atleast 3 characters long'),
     userController.createUserController)
 
-export default router;
+export default router; 

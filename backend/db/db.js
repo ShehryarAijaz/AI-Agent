@@ -6,4 +6,4 @@ function connect() {
     .catch(err => console.error('Error connecting to MongoDB:', err));
 }
 
-export default connect; 
+export default connect;

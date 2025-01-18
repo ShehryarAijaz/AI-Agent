@@ -16,5 +16,5 @@ export const createUser = async ({
         password: hashedPassword
     })
 
-    return user;
+    return user; 
 }
