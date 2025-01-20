@@ -3,8 +3,7 @@ import userModel from '../models/user.model.js'
 // Service to create user in database
 
 export const createUser = async ({
-    email, password
-}) => {
+    email, password }) => {
     if (!email || !password) {
         throw new Error('Email and password are required');
     }
@@ -15,6 +14,5 @@ export const createUser = async ({
         email,
         password: hashedPassword
     })
-
     return user; 
 }
